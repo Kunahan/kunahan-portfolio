@@ -67,3 +67,68 @@ footer {
   color: #ff1493;
   font-weight: 600;
 }
+.portfolio-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #ff69b4;
+}
+
+.portfolio-section h2,
+.portfolio-section h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #ff1493;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #ff1493;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.scroll-gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ff69b4 transparent;
+}
+
+.scroll-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-gallery::-webkit-scrollbar-thumb {
+  background-color: #ff69b4;
+  border-radius: 4px;
+}
+
+.scroll-gallery img {
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff1493;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.scroll-gallery img:hover {
+  transform: scale(1.1);
+}
